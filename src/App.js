@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>GitHub</h1>
+      <h1 className='title' >GitHub</h1>
       <SearchBar onEnter={handleEnter} />
       <img src='https://github.com/images/modules/search/home-desktop-light.webp'
       alt='github'
