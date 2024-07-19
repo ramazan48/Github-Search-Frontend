@@ -1,21 +1,14 @@
 // src/App.js
 import React from 'react';
-import SearchBar from './SearchBar';
+import {SearchGitHub} from './SearchBar';
 import './App.css';
 
 const App = () => {
-  const handleEnter = (input) => {
-    alert(`You entered: ${input}`);
-  };
 
   return (
     <div className="App">
       <h1 className='title' >GitHub</h1>
-      <SearchBar onEnter={handleEnter} />
-      <img src='https://github.com/images/modules/search/home-desktop-light.webp'
-      alt='github'
-      className='image'>
-      </img>
+      <SearchGitHub />
     </div>
   );
 };

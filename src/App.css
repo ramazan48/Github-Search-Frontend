@@ -5,11 +5,9 @@
 }
 
   .input-container {
-    /* To edit input text responsive adjustment */
     align-items: center;
     flex-direction: column;
     display: flex;
-    min-width: 400px;
   }
   .input-container .icon{
     position: absolute;
@@ -17,7 +15,6 @@
     margin-bottom: 40px;
     font-size: 18px;
     color: rgb(131, 131, 131);
-    flex-direction: column;
   }
   
   .input-bar {
@@ -39,7 +36,7 @@
     font-size: 26px;
     min-width: 600px;
   }
-  .image{
+  .main-image{
     width: 700px;
     height: 350;
     margin-top: 30px;
@@ -51,9 +48,22 @@
     color: rgb(89, 86, 86);
   }
   @media screen and (max-width: 800px) {
-    .image{
+    .main-image{
       width: 400px;
       height: 200px;
     }
+    .info-image{
+      width: 40px;
+      height: 40px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    li{
+      font-size: 15px;
+    }
+
   }
-  
+  .info-container{
+    width: 10px;
+  }
