@@ -15,6 +15,24 @@ const SearchGitHub = () => {
 
     const usersUrl = `https://api.github.com/search/users?q=${encodeURIComponent(query)}`;
     //new part
+    const reposUrl = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}`;
+
+    const xhrRepos = new XMLHttpRequest();
+    xhrRepos.open('GET', reposUrl, true);
+    xhrRepos.onreadystatechange = function () {
+      if (xhrRepos.readyState === 4) {
+        if (xhrRepos.status === 200) {
+          const response = JSON.parse(xhrRepos.responseText);
+          setRepos(response.items);
+        } else {
+          setError(`Repository Search Error: ${xhrRepos.status}`);
+          alert(query + "'s repository hasn't found");
+          setRepos([]);
+        }
+      }
+    };
+    xhrRepos.send();
+
 
     const xhrUsers = new XMLHttpRequest();
     xhrUsers.open('GET', usersUrl, true);
