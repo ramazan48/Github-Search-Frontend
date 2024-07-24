@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import {SearchGitHub} from './SearchBar';
 import './App.css';

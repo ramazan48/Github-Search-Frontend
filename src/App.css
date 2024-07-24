@@ -53,8 +53,7 @@
       height: 200px;
     }
     .info-image{
-      width: 40px;
-      height: 40px;
+      width: 55px;
     }
     h2{
       font-size: 20px;
@@ -66,4 +65,6 @@
   }
   .info-container{
     width: 10px;
+    font-size: 15px;
+    padding-top: 85px;
   }
