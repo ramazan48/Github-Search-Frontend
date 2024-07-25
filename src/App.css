@@ -53,18 +53,21 @@
       height: 200px;
     }
     .info-image{
-      width: 55px;
+      width: 40px;
     }
-    h2{
-      font-size: 20px;
+    .info-container{
+      font-size: 9px;
     }
-    li{
+    .error{
       font-size: 15px;
     }
 
   }
   .info-container{
-    width: 10px;
-    font-size: 15px;
     padding-top: 85px;
+    text-align: left;
+    flex-direction: column;
+  }
+  .error{
+    color: red;
   }
