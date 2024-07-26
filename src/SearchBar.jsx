@@ -84,7 +84,6 @@ function SearchGitHub() {
         className="input-bar"
         style={{fontSize:'1.8vw', width:'70%'}}
         />
-        <span className='span-container'>Tip For an <a href='https://github.com/search/advanced'>advanced search</a>, use our prefixes</span>
       </div>
         <img src='https://github.com/images/modules/search/home-desktop-light.webp' alt='github' className='main-image'></img>
 
