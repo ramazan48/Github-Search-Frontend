@@ -1,27 +1,25 @@
 *{
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-}
-.container{
-  width: 100%;
+  align-content: center;
+
 }
 
   .input-container {
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
     display: flex;
   }
   .input-container .icon{
+    font-size: 2.2vw;
+    margin-top: 10px;
+    margin-right: 38%;
     position: absolute;
-    margin-right: 563px;
-    margin-bottom: 40px;
-    font-size: 18px;
     color: rgb(131, 131, 131);
   }
   
   .input-bar {
-    width: 600px;
+    font-size: 1.4vw;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -35,42 +33,28 @@
   }
   .App {
     text-align: center;
-    padding: 50px;
-    font-size: 26px;
-    min-width: 600px;
+    padding: 5px;
   }
   .main-image{
-    width: 700px;
-    height: 350;
+    width: 50%;
     margin-top: 30px;
   }
   .span-container{
-    font-size: 16px;
+    font-size: 1.5vw;
     text-align: center;
     margin-top: 20px;
     color: rgb(89, 86, 86);
   }
-  @media screen and (max-width: 800px) {
-    .main-image{
-      width: 400px;
-      height: 200px;
-    }
-    .info-image{
-      width: 40px;
-    }
-    .info-container{
-      font-size: 9px;
-    }
-    .error{
-      font-size: 15px;
-    }
-
-  }
+ 
   .info-container{
     padding-top: 85px;
     text-align: left;
     flex-direction: column;
+    font-size: 2vw;
   }
   .error{
     color: red;
+  }
+  h1{
+    font-size: 4vw;
   }

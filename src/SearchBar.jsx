@@ -68,19 +68,22 @@ function SearchGitHub() {
     xhr.send();
   };
   return (
+    
     <div className='container'>
       {loading && <p>Loading...</p>}
       {error && <p className='error'>{error}</p>}
 
-      <div className="input-container">
-      <FontAwesomeIcon icon={faSearch} className='icon' />
+      <div className="input-container" style={{width:'60%'}}>
+      <FontAwesomeIcon icon={faSearch} className='icon'/>
       <input 
         type="text"
         value={username}
         onChange={handleInputChange}
         onKeyPress={handleKeyPress}
         placeholder="Search GitHub"
-        className="input-bar"/>
+        className="input-bar"
+        style={{fontSize:'1.8vw', width:'70%'}}
+        />
         <span className='span-container'>Tip For an <a href='https://github.com/search/advanced'>advanced search</a>, use our prefixes</span>
       </div>
         <img src='https://github.com/images/modules/search/home-desktop-light.webp' alt='github' className='main-image'></img>
@@ -89,7 +92,7 @@ function SearchGitHub() {
         {user && (
         <div>
           <h2>User and Repos</h2>
-          <img src={user.avatar_url} alt={`${user.login}'s avatar`} width="100" className='info-image'/>
+          <img src={user.avatar_url} alt={`${user.login}'s avatar`} width="100" className='info-image' style={{width:'20%'}}/>
           <p><a href={user.html_url} target='_blank' rel='noopener noreferrer'>{user.login}</a></p>
         </div>
       )}
