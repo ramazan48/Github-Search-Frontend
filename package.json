@@ -1,4 +1,5 @@
 {
+  "homepage": "http://{kullanıcı-adınız}.github.io/{repository-adı}",
   "name": "react-search-bar",
   "version": "0.1.0",
   "private": true,
